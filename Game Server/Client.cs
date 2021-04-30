@@ -71,7 +71,6 @@ namespace Game_Server
                     int _byteLength = stream.EndRead(_result);
                     if (_byteLength <= 0)
                     {
-                        // TODO: disconnect
                         return;
                     }
 
@@ -84,7 +83,6 @@ namespace Game_Server
                 catch (Exception _ex)
                 {
                     Console.WriteLine($"Error receiving TCP data: {_ex}");
-                    // TODO: disconnect
                 }
             }
 
